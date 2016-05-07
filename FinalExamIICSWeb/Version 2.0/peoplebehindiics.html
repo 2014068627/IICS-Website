@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<style>
+.city {display:none;}
+</style>
+<style>
+.content {display:none;}
+</style>
+<title> PEOPLE BEHIND IICS </title>
+	<link href="theinstitute.css" rel="stylesheet" type="text/css" />
+	<link href="peoplebehindics.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	
+    <ul class="nav">
+		<li><a href="http://www.ust.edu.ph/"> <font color = "white"> HOME </font></a></li> 
+		<li><a href=theinstitute.html> <font color="white"> THE INSTITUTE </font> </a></li> 
+		<li><a href=peoplebehindiics.html> <font color="white"> PEOPLE BEHIND IICS </font></a></li> 
+		<li>CAMPUS LIFE</li> 
+		<li>ACADEMICS</li> 
+		<a href="http://www.ust.edu.ph/"> <img class="USTlogo" src="UST logo.png"></img> </a>
+	</ul>	
+	
+	  <br><br><br>
+		    <div class = "vertical" align="center">
+		    	
+		    	<div class = "logo">
+		    		<span class= "center"> </span>
+					<img class = "displayed" src = "IICS logo.png" align="middle"/>
+				</div>
+				
+			    <br><br><br><br>
+			   
+			   	<div class = "text">
+					<span class = "photo"> </span>
+					<p> PEOPLE BEHIND IICS </p>
+				</div>
+				
+				<br><br><br>
+			   	<nav class="links">
+  						
+  						<div class="iics">
+    							<a href="#" class="tab" onclick="viewContent(event, 'Faculty')">  <span class = "photo"> FACULTY </span></a>
+  						</div>
+  						<br>
+  						
+  						<div class="vision">
+  								<a href="#" class="tab" onclick="viewContent(event, 'Administrators')">  <span class = "photo"> ADMINISTRATORS </span></a>
+  						</div>
+  				</nav>
+		    </div>
+		    
+<script>
+function viewContent(evt, cityName) 
+{
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+		    
+		    <section>
+		    			<img src="engg.JPG" class="resize" width="536" height="100">
+		    </section>
+		    
+		    <section class="background">
+		    			<div id="Faculty" class="w3-container city">
+		    						<h2 class="members"> THE IICS FACULTY MEMBERS </h2>
+		    						<div class = "Faculty">
+		    						   <ul>
+		    								<li> <a href="#" class="faculty" onclick="people(event, 'CS')"> Department of Computer Science </a> </li>
+		    								<li> <a href="#" class="faculty" onclick="people(event, 'IT')"> Department of Information Technology </a> </li>
+		    							    <li> <a href="#" class="faculty" onclick="people(event, 'IS')"> Department of Information Systems </a> </li>
+		    						   </ul>
+		    					    </div>
+		    					  			        
+		    			</div>
+		    			
+		    			<div id="Administrators" class="w3-container city">
+		    						<h2 class="members"> THE IICS ADMIN OFFICIALS </h2>
+		    						
+		    						<br>
+		    						<br>
+		    						
+		    						<h2 class="members"> THE IICS ACADEMIC OFFICIALS </h2>
+		    						 			        
+		    			</div>
+		    			
+		    			
+		    </section>
+		    
+<script>
+function people(evt, contentName) 
+{
+  var i, x, tablinks;
+  x = document.getElementsByClassName("content");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("faculty");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+  }
+  document.getElementById(contentName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>		 
+		
+		
+</body>
+</html>
