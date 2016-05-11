@@ -1,0 +1,269 @@
+@CHARSET "ISO-8859-1";
+body {
+	padding: 0;
+	margin: 0;
+	overflow-y:scroll;
+	background-color:rgb(230,221,188);
+}
+
+ul.nav{
+	position:fixed;
+	z-index:10;
+	width:100%;
+	min-width:100%;
+	height:55px;
+	list-style:none;
+	text-align:right;
+	font-family:verdana;
+	font-size:13px;
+	background-color: rgba(0,0,0, 0.85);
+	color:white;
+	top:-15px;
+	line-height: 50px;
+	overflow:hidden;
+}
+
+ul.nav > li.navLi{
+	position:relative;
+	padding-top:9px;
+	padding-right:22px;
+	padding-left:22px;
+	display:inline-block;
+	top:-10%;
+	right:10%;
+	
+	-webkit-transition: all 900ms ease;
+	-moz-transition: all 900ms ease;
+	-ms-transition: all 900ms ease;
+	-o-transition: all 900ms ease;
+	transition: all 900ms ease;
+}
+
+li.navLi:hover{ 
+	-webkit-box-shadow:0px 2px 0px white;
+ 	-moz-box-shadow:0px 2px 0px white;
+ 	-ms-box-shadow:0px 2px 0px white;
+ 	-o-box-shadow:0px 2px 0px white;
+ 	box-shadow:0px 2px 0px white;
+}
+
+a{
+	color:inherit;
+	text-decoration: none;
+}
+
+img.USTlogo{
+	position:absolute;
+	z-index:10;
+	height:45px;
+	width:45px;
+	top:5px;
+	right:68px;
+}
+
+
+div.sideMenu{
+	position:fixed;
+	z-index:1;
+	top:52px;
+	height:100%;
+	width:20%;
+	overflow:hidden;
+	background-color:rgb(31,31,31);
+	text-align:center;
+	font-family:century gothic;
+	color:white;
+	font-size:17px;
+	line-height:15px;
+}
+
+div.sideMenu > img.SideBgpic {
+	position:absolute;
+	height:100%;
+	right:-7%;
+}
+
+div.sideMenu > img.logo {
+	position:absolute;
+	z-index:3;
+	width:33%;
+	height:auto;
+	left:33%;
+	top:40px;
+}
+
+div.sideMenu > p {
+	position:absolute;
+	z-index:3;
+	text-align:center;
+	width:100%;
+	height:60px;
+	top:160px;
+	font-size:25px;
+}
+
+div.option:hover {
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition:all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	background-color: rgba(63,63,63,0.5);
+}
+
+div.option:active {
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition:all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	background-color: gray;
+}
+
+div#studentCouncilOption{
+	cursor:pointer;
+	position:absolute;
+	z-index:4;
+	width:70%;
+	height:45px;
+	border:solid 2px white;
+	top:270px;
+	left:14%;
+
+}
+
+div#organizationOption{
+	cursor:pointer;
+	position:absolute;
+	z-index:4;
+	width:70%;
+	height:45px;
+	border:solid 2px white;
+	top:350px;
+	left:14%;
+}
+
+div#calendarOption{
+	cursor:pointer;
+	position:absolute;
+	z-index:4;
+	width:70%;
+	height:45px;
+	border:solid 2px white;
+	top:430px;
+	left:14%;
+}
+
+div#galleryOption{
+	cursor:pointer;
+	position:absolute;
+	z-index:4;
+	width:70%;
+	height:45px;
+	border:solid 2px white;
+	top:510px;
+	left:14%;
+}
+
+div#studentCouncil {
+	position:absolute;
+	z-index:3;
+	top:53px;
+	width:80%;
+	height:1000px;
+	right:0;
+	overflow:hidden;
+	opacity:0;
+	
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+div#organization {
+	position:absolute;
+	z-index:3;
+	top:53px;
+	width:80%;
+	height:1000px;
+	right:0;
+	overflow:hidden;
+	opacity:0;
+	
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+div#calendar {
+	position:absolute;
+	z-index:3;
+	top:53px;
+	width:80%;
+	height:1000px;
+	right:0;
+	overflow:hidden;
+	opacity:0;
+	
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+div#gallery {
+	position:absolute;
+	z-index:3;
+	top:53px;
+	width:80%;
+	height:1000px;
+	right:0;
+	overflow:hidden;
+	opacity:0;
+	
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+div.header{
+	position:absolute;
+	top:0;
+	height:200px;
+	width:100%;
+	background-color:white;
+	opacity:1;
+	bottom:0;
+	overflow:hidden;
+}
+
+div.header > img {
+	position:absolute;
+	width:100%;
+	bottom:-80%;
+}
+
+div.header > span {
+	position:absolute;
+	z-index:4;
+	font-family:century gothic;
+	font-size:50px;
+	color:white;
+	bottom:0;
+	left:10%;
+}
+
+div.BackToTop {
+	position:fixed;
+	z-index:10;
+	width:130px;
+	height:20px;
+	bottom:10px;
+	right:10px;
+	border: solid 3px rgba(100,100,100,.8);
+	font-family:verdana;
+	text-align:center;
+	color:gray;
+	
+}

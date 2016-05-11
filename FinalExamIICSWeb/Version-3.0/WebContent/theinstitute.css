@@ -1,0 +1,399 @@
+body {
+	padding: 0;
+	margin: 0;
+	overflow-y:scroll;
+	background-color:rgb(230,221,188);
+}
+
+ul.nav
+{
+	position:fixed;
+	z-index:10;
+	width:100%;
+	min-width:100%;
+	height:55px;
+	list-style:none;
+	text-align:right;
+	font-family:verdana;
+	font-size:13px;
+	background-color: rgba(0,0,0, 0.85);
+	color:white;
+	top:-15px;
+	line-height: 50px;
+	overflow:hidden;
+}
+
+ul.nav > li.navLi{
+	position:relative;
+	padding-top:9px;
+	padding-right:22px;
+	padding-left:22px;
+	display:inline-block;
+	top:-10%;
+	right:10%;
+	
+	-webkit-transition: all 900ms ease;
+	-moz-transition: all 900ms ease;
+	-ms-transition: all 900ms ease;
+	-o-transition: all 900ms ease;
+	transition: all 900ms ease;
+}
+
+li.navLi:hover{ 
+	-webkit-box-shadow:0px 2px 0px white;
+ 	-moz-box-shadow:0px 2px 0px white;
+ 	-ms-box-shadow:0px 2px 0px white;
+ 	-o-box-shadow:0px 2px 0px white;
+ 	box-shadow:0px 2px 0px white;
+}
+
+a{
+	color:inherit;
+	text-decoration: none;
+}
+
+img.USTlogo
+{
+	position:absolute;
+	z-index:10;
+	height:45px;
+	width:45px;
+	top:5px;
+	right:68px;
+}
+
+nav.links div.iics
+{
+	border: 2px solid white;
+	display:block !important;
+	color: #FFFFFF;
+	font-size:16px;
+	text-align: center;
+	margin:0px;
+	width:100px;
+    padding: 4px 29px;
+    overflow: hidden;
+}
+
+div.vertical 
+{
+    line-height:30px;
+    background-image: url("images/sideMenubg.jpg");
+    height:100%;
+    width:250px;
+    float:left;
+    padding:5px;
+    position:absolute;	
+    color: white;  
+}
+
+div.logo
+{
+	text-align:center;
+	width:100%;
+}
+
+span.center
+{
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img.displayed
+{
+    position:absolute;
+	z-index:3;
+	width:33%;
+	height:auto;
+	left:33%;
+	top:40px;
+}
+
+div.vertical > p
+{
+    position:absolute;
+	z-index:3;
+	text-align:center;
+	width:100%;
+	height:60px;
+	top:160px;
+	font-size:25px;
+}
+
+p.text
+{
+	font-color: black;
+	font-size:16px;
+	display: inline-block;
+    vertical-align: middle;
+}
+
+nav.links
+{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav.links div.vision
+{
+	background-color: transparent;
+	display:block !important;
+	color: #FFFFFF;
+	font-size:16px;
+	text-align: center;
+	margin:0px;
+	width:100px;
+    padding: 4px 50px 4px 10px;
+    overflow: hidden;
+    white-space: nowrap; 
+    border: 2px solid #FFFFFF;
+  
+}
+
+nav.links div:hover
+{
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition:all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+	background-color: rgba(63,63,63,0.5);
+}
+
+div.mission
+{
+	position: absolute;
+    display: none;
+}
+
+span.photo
+{
+	cursor: pointer;
+	background-color: transparent;
+	clear: both;
+}
+
+	
+section.background
+{
+	position:absolute;
+	height:680px;
+	width:1350px;
+	z-index: -1;
+	background-image: url("images/beige.jpg");
+}
+
+p.padding
+{
+	padding-left: 25%;
+	padding-right:5%;
+}
+
+p.paddings
+{
+	padding-left: 5%;
+	padding-right: 8%;
+}
+
+.building 
+{ 
+  position: relative; 
+  overflow:hidden; 
+  height: 100px; 
+  width: 200px;
+
+}
+.building img.resize 
+{ 
+	position: absolute; 
+	right: 0; 
+	bottom: 0;
+	
+}
+div.faci
+{
+    position:relative;
+    max-width: 400px;
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2.imageText
+{
+   position: absolute; 
+   top: 140px; 
+   left: 10px; 
+   width: 50%; 
+   padding-left: 25%;
+}
+
+section.image
+{
+	padding-left:17%;
+}
+
+h2.imageText span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(255, 0, 0); /* fallback color */
+   background: rgba(255, 0, 0, 0.4);
+   padding: 10px;
+}
+h2.imageText2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(255, 0, 0); /* fallback color */
+   background: rgba(255, 0, 0, 0.4);
+   padding: 10px;
+}
+h2.imageText3 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(255, 0, 0); /* fallback color */
+   background: rgba(255, 0, 0, 0.4);
+   padding: 10px;
+}
+img.netlab
+{
+	padding-left: 25%;
+}
+h2.mission
+{
+	padding-left: 25%;
+}
+h2.imageText2
+{
+   position: absolute; 
+   top: 340px; 
+   left: 10px; 
+   width: 50%; 
+   padding-left: 25%;
+}
+h2.imageText3
+{
+   position: absolute; 
+   top: 540px; 
+   left: 10px; 
+   width: 50%; 
+   padding-left: 25%;
+}
+
+img.resize
+{
+	zoom: 200%;
+}
+.timeline {
+  list-style: none;
+  padding-left: 300px;
+}
+.timeline > li {
+  margin-bottom: 60px;
+}
+
+/* for Desktop */
+@media ( min-width : 640px )
+{
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+  .timeline-date {
+    width: 110px;
+    float: left;
+    margin-top: 20px;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 3px #e5e5d1 solid;
+    padding-left: 30px;
+  }
+  .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #6fc173;
+    position: absolute;
+    left: 106px;
+    top: 24px;
+    border-radius: 100%;
+  }
+}
+
+@keyframes slider 
+{
+0% {left: 0; }
+20% {left: 0; }
+25% {left: -100%; }
+45% {left: -100%; } 
+50% {left: -200%; }
+70% {left: -200%; }
+75% {left: -300%; }
+95% {left: -300%; }
+100%{left: -400%; }
+}
+
+#slider {
+	overflow: hidden;
+	position:relative;
+	width:550px;
+	height:300px;
+	min-width:400px;
+	padding-left: 25%;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+	top:-15%;
+	left:0%;
+	position:relative;
+
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slider infinite; 
+
+}
+#slider button {
+position: absolute;
+display: block;
+box-sizing: border-box;
+border: none;
+outline: none;
+top: 0;
+bottom: 0;
+width: 20%;
+background-color: rgba(0, 0, 0, 0.3);
+color: #fff;
+margin: 0;
+padding: 0;
+text-align:center;
+opacity: 0;
+z-index: 2;
+}
+
+#slider button.prev {
+padding-left: 20% ;
+}
+
+#slider button.next {
+right: 0;
+}
+
+#slider button:hover, #slider button:active {
+opacity: 1.0;
+}
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Campus Life</title>
+	<script src="jquery.js"></script>
+	<script src="JavaScriptCode.js"></script>
+</head>
+<body>
+
+	<link rel="stylesheet" type="text/css" href ="CampusLife.css">
+
+	<ul class="nav">
+		<li class="navLi"><a href="homepage.jsp">HOME</a></li> 
+		<li class="navLi"><a href="theinstitute.jsp"> THE INSTITUTE </a></li> 
+		<li class="navLi"><a href="peoplebehindiics.jsp">PEOPLE BEHIND IICS </a> </li> 
+		<li class="navLi">CAMPUS LIFE</li> 
+		<li class="navLi"><a href="Academics.html">ACADEMICS</a></li> 
+		<a href="http://www.ust.edu.ph/"> <img class="USTlogo" src="images/UST logo.png"></img> </a>
+	</ul>
+	
+	<div class="sideMenu" onclick="CLchangeDIV()"> 
+		<img class="logo" src="images/IICS logo.png">
+		<p>CAMPUS LIFE</p>
+		<div class="option" id="studentCouncilOption"><br>STUDENT COUNCIL</div>
+		<div class="option" id="organizationOption"><br>ORGANIZATION</div>
+		<div class="option" id="calendarOption"><br>CALENDAR</div>
+		<div class="option" id="galleryOption"><br>GALLERY</div>
+		<img class="SideBgpic"src="images/sideMenubg.jpg">
+	</div>
+	
+	<h1 id="top"></h1>
+	
+	<div id="studentCouncil">
+		<div class="header"><span>STUDENT COUNCIL</span><img src="images/bldg.jpg"></div>
+	</div>
+	<div id="organization">
+		<div class="header"><span>ORGANIZATION</span><img src="images/bldg.jpg"></div>
+	</div>
+	<div id="calendar">
+		<div class="header"><span>CALENDAR</span><img src="images/bldg.jpg"></div>
+	</div>
+	<div id="gallery">
+		<div class="header"><span>GALLERY</span><img src="images/bldg.jpg"></div>
+	</div>
+
+	<div class="BackToTop"><a href="#top">BACK TO TOP</a></div>
+
+<script type="text/javascript">
+   CLchangeDIV();
+</script>
+	
+</body>
+</html>
