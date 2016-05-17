@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Register Account </title>
+</head>
+<style>
+input[type=submit] 
+{
+    padding:10px 15px;  
+    border:2px solid #990000;
+    background:transparent;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    color: black;
+    font-family:Verdana;
+    display:block;
+}
+
+input[type=submit]:hover 
+{
+   background:#990000; 
+   color:white
+}
+</style>
+<body>
+ 	<div>
+		<img src = "IICS Banner.png" width = "1350">	
+	</div>
+		<form action="reg.jsp" method="post">
+
+		<h4> Username :<input type="text" name="userid" /><br/></h4>
+		<h4> Password :<input type="password" name="pwd" /><br/></h4>
+		<h4> First name :<input type="text" name="fname" /><br/></h4>
+		<h4> Last name :<input type="text" name="lname" /><br/></h4>
+		<h4> Email :<input type="text" name="email" /><br/></h4>
+		
+
+		<input type="submit" value = "Register" size = "20" style = "font-size:20px"/>
+
+		</form>
+</body>
+</html>
