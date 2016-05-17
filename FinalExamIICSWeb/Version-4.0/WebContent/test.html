@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+	<style>
+		#show1{display:none;}
+		#show2{display:none;}
+	</style>
+
+</head>
+<body onclick="CLchangeDIV()">
+
+<div id="div">Click me bitch</div>
+<div id="div2">clicke me you hole</div>
+<br>
+<div id="show1">DIV 1</div>
+<div id="show2">DIV 2</div>
+
+<script>
+function CLchangeDIV(){
+	var div = document.getElementById("div");
+	var div2 = document.getElementById("div2");
+	var show1 = document.getElementById("show1");
+	var show2 = document.getElementById("show2");
+	
+	div.addEventListener("click", function () {
+	  show1.style.display = "block";
+	  show2.style.display = "none";
+    }) 
+    
+    div2.addEventListener("click", function () {
+	  show1.style.display = "none";
+	  show2.style.display = "block";
+    })     
+ }; 
+   
+</script>
+
+</body>
+</html>
